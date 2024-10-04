@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Grazie per il tuo ordine!</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<section>
+	<h3>Grazie per il tuo ordine!</h3>
+	<a href="C:/Users/ricca/VisualStudio Code/Crafty/Crafty/RiepilogoOrdine.html">
+	Verrai reindirizzato tra qualche secondo...
+	</a>	
+	</section>
+  <script>
+			function redirectToAnotherUrl() {
+				setTimeout(
+						function() {
+							window.location.href = 'http://127.0.0.1:3000/RiepilogoOrdine.html'; // Replace with your target URL
+						}, 5000); // 5000 milliseconds = 5 seconds
+			}
+
+			// Call the function when the page loads
+			window.onload = redirectToAnotherUrl;
+	</script>
+  	
+</body>
+</html>
