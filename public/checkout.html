@@ -37,7 +37,7 @@
 
             return {
                 name,
-                price: parseInt(price, 10) // Convert to integer
+                price: parseInt(price, 10) 
             };
         }
 
@@ -51,7 +51,7 @@
 
             try {
                 const sessionData = await createCheckoutSession(product);
-                const stripe = Stripe('pk_test_51Pt9vJJv94LvXcbBgdFkY12VlRj4OL4VKCbRObPyz7II0abcpbY7LW9ik4juqHsZ6AzFdztvMOh7V75JSRtRTNTy00fr9BhAd7'); // Replace with your Stripe publishable key
+                const stripe = Stripe('???'); // Inserisci la chiave pubblica di Stripe
                 await stripe.redirectToCheckout({ sessionId: sessionData.id });
             } catch (error) {
                 console.error('Error:', error);
